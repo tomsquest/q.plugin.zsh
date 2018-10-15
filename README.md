@@ -1,7 +1,22 @@
-# ZSH plugin for [Golang Q debug tool](https://github.com/y0ssar1an/q)
+# ZSH plugin for Q, the Dirty Debugging tool
 
-Add two functions, `qq` and `rmqq`, for tailing and removing the `%TMPDIR/q` file created by [Q](https://github.com/y0ssar1an/q).
+**`q`** is Quick-and-dirty debugging output for tired programmers.
 
-The two functions come from https://github.com/y0ssar1an/q#install
+This ZSH plugin adds two functions:
 
-On Linux, the `TMPDIR` environment variable must be defined. If missing, add it with `export TMPDIR=/tmp`.
+1. **`qq`** tails the `$TMPDIR/q` file
+1. **`rmqq`** clears the `$TMPDIR/q` file before tailing it 
+
+# Q libraries
+
+Q is available in multiple languages:
+
+In **Python**, the canonical version is the [`q` module by zestyping](https://github.com/zestyping/q).
+
+In **Go**, see the [Q library by y0ssar1an](https://github.com/y0ssar1an/q).
+
+In **Javascript**, see my [q.js NPM module](https://github.com/tomsquest/q.js).
+
+# Credits
+
+The two functions originates from [y0ssar1an's implementation of Q in Go](https://github.com/y0ssar1an/q#install)
